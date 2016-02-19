@@ -2,4 +2,4 @@
 
 ##Live Link
 
-[http://scottmries.com](
+[http://scottmries.com](http://scottmries.com)
