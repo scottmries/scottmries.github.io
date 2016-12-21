@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>oopTrees</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet"> -->
+    <style>
+    /*@font-face {
+      font-family: "actor";
+      src: url("fonts/Actor-regular.ttf");
+    }*/
+    body {
+        padding: 0; margin: 0;
+        background-color: rgb(50, 50, 60);
+        /*font-family: sans-serif;*/
+    }
+    canvas {vertical-align: top;}
+    .generating {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: rgb(205, 205, 195);
+        display: block;
+    }
+    .hidden {
+        display: none;
+    }
+    .display-block {
+        display: block;
+    }
+    .transparent {
+        opacity: 0;
+    }
+    .opaque {
+        opacity: 1;
+    }
+    .animating {
+        transition: 1s ease-in-out opacity;
+    }
+    </style>
+  </head>
+  <body>
+      <div id="treesCanvas" class="animating transparent"></div>
+      <p class="generating animating">making a landscape<span class="ellipsis"></span></p>
+  </body>
+  <script src="libraries/p5.js" type="text/javascript"></script>
+
+  <script src="libraries/p5.dom.js" type="text/javascript"></script>
+  <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+  <script src="light.js" type="text/javascript"></script>
+  <script src="branch.js" type="text/javascript"></script>
+  <script src="tree.js" type="text/javascript"></script>
+  <script src="sketch.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
+</html>
