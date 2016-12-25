@@ -8,14 +8,14 @@ var Branch = function(baseX, baseY, length, prevTheta, thetaSpread, thickness){
   this.thickness = r * thickness;
   var theta = (Math.random() - 0.5) * thetaSpread + prevTheta;
   // this.theta = (Math.random() - 0.5) * thetaSpread + prevTheta;
-  this.endX = ( - this.length * Math.sin((theta / (Math.PI / 180)))) + this.baseX;
-  this.endY = ( this.length * Math.cos((theta / (Math.PI / 180)))) + this.baseY;
+  this.endX = ( - length * Math.sin((theta / (Math.PI / 180)))) + this.baseX;
+  this.endY = ( length * Math.cos((theta / (Math.PI / 180)))) + this.baseY;
   // this.endX = ( - this.length * Math.sin((this.theta / (Math.PI / 180)))) + this.baseX;
   // this.endY = ( this.length * Math.cos((this.theta / (Math.PI / 180)))) + this.baseY;
   var slope = (this.endY-this.endX)/this.endX-this.baseX;
   // this.slope = (this.endY-this.endX)/this.endX-this.baseX;
   // if (this.length > 3){
-  if (length > 3 && this.thickness > 1){
+  if (length > 3 ){
     var numSubbranches = 2;
     // var subbranches = [];
     this.subbranches = [];
