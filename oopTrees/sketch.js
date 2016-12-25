@@ -36,7 +36,7 @@ var treeSketch = function(p) {
             }
         }
 
-      // mic = p5.AudioIn();
+    //   mic = p5.AudioIn();
       // audioGrab.getSources(function(sourceList) {
       //   //print out the array of available sources
       //   console.log(sourceList);
