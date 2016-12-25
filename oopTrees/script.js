@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 ellipsis += ".";
             }
             document.querySelector(".ellipsis").innerText = ellipsis;
-            console.log(ellipsis);
+            // console.log(ellipsis);
     }, 500);
 
   var treesP5 = new p5(treeSketch, "treesCanvas");
