@@ -4,5 +4,4 @@ var Tree = function(baseX, baseY, maxTrunkLength, trunkThickness){
 
 Tree.prototype.draw = function(c, p){
   this.trunk.draw(c, p);
-  console.log(this);
 }
