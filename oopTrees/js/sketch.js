@@ -8,7 +8,9 @@ var treeSketch = function(p) {
 
     var mic;
 
-    var trees;
+    var tree;
+
+    var trees = 1;
 
     var treeColor;
 
@@ -19,16 +21,18 @@ var treeSketch = function(p) {
     p.setup = function() {
         var generatingP = document.querySelector(".generating");
         var canvas = document.querySelector("#treesCanvas");
+        tree = new Tree(p.random()*p.width, p.height/2, p.height/16, trunkThickness);
+        console.log(tree);
         treeColor = p.color(0);
       p.createCanvas(p.windowWidth,p.windowHeight);
-      trees = [];
+    //   trees = [];
       lights = [];
       treeImage = p.createImage(p.width * 2, p.height/2);
       p.background(p.color(50,50,60));
-      for(var i = 0; i < 20; i++){
-        trees.push(new Tree(p.random()*p.width, p.height/2, p.height/16, trunkThickness));
-        trees[i].draw(treeColor, p);
-      }
+    //   for(var i = 0; i < 20; i++){
+    //     trees.push(new Tree(p.random()*p.width, p.height/2, p.height/16, trunkThickness));
+    //     trees[i].draw(treeColor, p);
+    //   }
         for(var i = 0; i < 2; i++){
             lights.push(new Light(p.random()*p.width, p.random()*3*p.height/16 + p.height/16));
             if(lights[i].on){
@@ -50,7 +54,17 @@ var treeSketch = function(p) {
     }
 
     p.draw = function() {
-        p.noLoop();
+        if (trees < 20){
+            tree.draw(treeColor, p);
+            if(tree.opacity >= 255){
+                console.log(tree);
+                tree = new Tree(p.random()*p.width, p.height/2, p.height/16, trunkThickness);
+                trees++;
+            }
+        }
+        else {
+            p.noLoop();
+        }
         // p.background(p.color(50,50,60));
       // micLevel = mic.getLevel();
     }

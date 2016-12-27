@@ -44,7 +44,6 @@ if (navigator.mediaDevices) {
         setInterval(function(){
             var dataArray = new Float32Array(analyser.fftSize); // Float32Array needs to be the same length as the fftSize
             analyser.getFloatTimeDomainData(dataArray); // fill the Float32Array with data returned from getFloatTimeDomainData()
-            console.log(dataArray[analyser.fftSize/2]);
         }, 16);
 
         // Get new mouse pointer coordinates when mouse is moved
