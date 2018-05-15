@@ -188,8 +188,8 @@ a:focus {
 }
 
 #experience {
-  background: url(../img/Peer.JPG) no-repeat scroll;
-  background-size: contain;
+  background: url(../img/cinema-east.JPG) no-repeat center right;
+  background-size: cover;
   text-shadow: 2px 2px black;
 }
 
@@ -276,12 +276,13 @@ a:focus {
     padding: 50px 0;
     margin-top: 200px;
     color: #fff;
-    background: url(../img/eiffel_tower.JPG) no-repeat center center scroll;
+    background: url(../img/pepsi.JPG) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    text-shadow: 2px 2px black;
 }
 
 #map {
@@ -392,9 +393,16 @@ body {
 }
 
 #skills img {
-    height: 100px;
+    max-height: 100px;
+    max-width: 100%;
 }
 
 ul.list-inline.banner-social-buttons li {
   background: black;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.logo-container {
+    height: 100px;
 }
