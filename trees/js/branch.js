@@ -8,7 +8,7 @@ var Branch = function(baseX, baseY, length, prevTheta, thetaSpread, thickness){
   this.endX = ( - length * Math.sin((theta / (Math.PI / 180)))) + this.baseX;
   this.endY = ( length * Math.cos((theta / (Math.PI / 180)))) + this.baseY;
   var slope = (this.endY-this.endX)/this.endX-this.baseX;
-  if (length > 3.5 ){
+  if (length > 5){
     var numSubbranches = 2;
     this.subbranches = [];
     for (var i = 0; i < numSubbranches; i++){
