@@ -89,8 +89,8 @@ const Home = () => {
                 <Link href="http://linkedin.com/in/scottmries/">LinkedIn</Link>
               </ListItem>
               <ListItem>
-                <ListIcon as={ExternalLinkIcon} mr={2} />
-                <Link href="https://scottmries.com/resume.pdf">Resume</Link>
+                <ListIcon as={LinkIcon} mr={2} />
+                <Link href="/resume.pdf">Resume</Link>
               </ListItem>
               <ListItem>
                 <ListIcon as={ExternalLinkIcon} mr={2} />
