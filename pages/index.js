@@ -90,7 +90,7 @@ const Home = () => {
               </ListItem>
               <ListItem>
                 <ListIcon as={LinkIcon} mr={2} />
-                <Link href="/resume.pdf">Resume</Link>
+                <Link href="/resume.pdf">Resumé</Link>
               </ListItem>
               <ListItem>
                 <ListIcon as={ExternalLinkIcon} mr={2} />
