@@ -3,7 +3,7 @@
 This repository contains the code my landing page. You can visit the landing
 page at [https://scottmries.com/](https://scottmries.com/).
 
-This is a fork of [https://git.sr.ht/~rogeruiz/landing-page](rogeruiz's landing page repo).
+This is a fork of [rogeruiz's landing page repo](https://git.sr.ht/~rogeruiz/landing-page).
 
 ## This project uses Bun
 
