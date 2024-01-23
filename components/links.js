@@ -21,10 +21,10 @@ const Links = () => {
             <List spacing={2}>
                 {/* TODO */}
                 <ListItem>
-                <Link href="/projects">
-                    <ListIcon as={LinkIcon} mr={2} />
+                <ListIcon as={LinkIcon} mr={2} />
+                    <Link href="/projects" >
                     Projects
-                </Link>
+                    </Link>
                 </ListItem>
                 {/* <ListItem>
                 <Link href="https://scottmries.com/scotts-thoughts/">
